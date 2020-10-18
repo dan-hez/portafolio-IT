@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eef0f2;
+    margin: 0;
+}
+header{
+    width: 100%;
+    padding: 20px;
+    background-color: #fafaff;
+}
+.caja-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li, a{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    color: #1c1c1c;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+    background-color: #daddd8;
+    padding: 5px 15px;
+}
+.inicio{
+    float: left;
+}
