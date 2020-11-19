@@ -65,7 +65,7 @@ a:hover{
     flex-flow: row wrap;
     justify-content: center;
 }
-.home article, figure{
+.home .home-greet, .home-figure{
     margin-top: 7%;
     width: 40%;
     height: 80%;
@@ -93,19 +93,17 @@ a:hover{
 
 .skills{
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     background-color: rgb(201, 201, 201);
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10%;
-
 }
 .skills-container{
     width: 80%;
     height: 100%;
-    background-color: rgb(158, 158, 158);
+    background-color: rgb(131, 131, 131);
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -114,7 +112,6 @@ a:hover{
 .skills-text{
     width: 40%;
     margin: auto;
-    margin-top: 7%;
     background-color: rgb(211, 211, 211);
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
@@ -125,31 +122,45 @@ a:hover{
 }
 .skills-text p{
     font-size: 1rem;
-    margin-top: 5%;
+    margin-top: 15%;
 }
 .skills-boxes{
-    width: 80%;
+    width: 60%;
     height: auto;
+    background-color: rgb(110, 110, 110);
+    margin-bottom: 20%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 .box-skill{
-    width: 260px;
-    height: 230px;
+    width: 200px;
+    height: 200px;
     background-color: white;
-    border-radius: 5px;
-    margin-top: 2%;
+    border-radius: 3px;
+    margin-top: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.skill{
+    width: 35%;
+    height: 40%;
+    background-color: rgb(223, 223, 223);
+}
+.skill .html5, .css, .js, .figma, .xd, .git{
+    align-content: center;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 /* main - quote ----------------------------------------- --> */
 
 .quote{
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     background-color: rgb(139, 139, 139);
     text-align: center;
     display: flex;
@@ -165,12 +176,68 @@ a:hover{
     margin-top: 5%;
 }
 .quote-text{
-    margin-top: 5%;
+    margin-top: 4%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.author{
+    margin-top: 4%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* main - project  ----------------------------------------- --> */
+
+.projects{
+    width: 100vw;
+    height: 150vh;
+    background-color: rgb(192, 192, 192);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.projects-container{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(131, 131, 131);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.projects-text{
+    width: 40%;
+    margin: auto;
+    background-color: rgb(211, 211, 211);
+    text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
 }
-.author{
-    margin-top: 5%;
-    font-family: 'Josefin Sans', sans-serif;
+.projects-text h2{
     font-size: 2rem;
+}
+.projects-text p{
+    font-size: 1rem;
+    margin-top: 5%;
+}
+.projects-boxes{
+    width: 60%;
+    height: auto;
+    background-color: rgb(110, 110, 110);
+    margin-bottom: 20%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.box-project{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 3px;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
