@@ -112,6 +112,7 @@ a:hover{
 .skills-text{
     width: 40%;
     margin: auto;
+    margin-top: 10%;
     background-color: rgb(211, 211, 211);
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
@@ -122,13 +123,13 @@ a:hover{
 }
 .skills-text p{
     font-size: 1rem;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 .skills-boxes{
-    width: 60%;
-    height: auto;
+    width: 65%;
+    height: auto;;
     background-color: rgb(110, 110, 110);
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -144,9 +145,13 @@ a:hover{
     align-items: center;
 }
 .skill{
-    width: 35%;
-    height: 40%;
+    width: 40%;
+    height: 60%;
     background-color: rgb(223, 223, 223);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 .skill .html5, .css, .js, .figma, .xd, .git{
     align-content: center;
@@ -210,6 +215,7 @@ a:hover{
 .projects-text{
     width: 40%;
     margin: auto;
+    margin-top: 15%;
     background-color: rgb(211, 211, 211);
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
@@ -223,8 +229,9 @@ a:hover{
     margin-top: 5%;
 }
 .projects-boxes{
-    width: 60%;
+    width: 80%;
     height: auto;
+    margin-top: 5%;
     background-color: rgb(110, 110, 110);
     margin-bottom: 20%;
     display: flex;
@@ -232,12 +239,28 @@ a:hover{
     justify-content: space-around;
 }
 .box-project{
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 280px;
     background-color: white;
     border-radius: 3px;
-    margin-top: 3%;
+    margin-top: 1%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.project{
+    width: 90%;
+    height: 70%;
+    background-color: rgb(223, 223, 223);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.project .portfolio-it, .aprendet-app, .artistic-portfolio {
+    align-content: center;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
 }
