@@ -25,7 +25,7 @@
                         </ul>
                     </nav>
 
-                    <button class="boton-menu">
+                    <button class="button-menu">
                         <a href="#Contact">Contact</a>
                     </button>
                 </div>
@@ -42,7 +42,7 @@
                         <h4 class="initial-greet">¡Hi! I am</h4>
                         <h1>Danylexi Hernandez</h1>
                         <p>Frontend Developer, Designer, and Illustrator</p>          
-                        <button>What I do</button>
+                        <button class="button-what-i-do">What I do</button>
                     </article>
 
                     <figure class="home-figure">
@@ -190,48 +190,79 @@
                 <!-- aquí inicia section contact -->
                 <section id="Contact" class="contact">
                     <article class="contact-container">
-                        <div class="left-box-contact-me">
-                            <h2>Contact me</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, fuga.</p>
                         
-                            <ul>
+                        <div class="contact-box contact-me">
+                    
+                            <h2>Contact me</h2>
+                            <p>Are you having new ideas for a project or just want to say hi,
+                                send me a message!, or follow me on my social networks and
+                                let's keep in contact :)
+                                </p>
+                        
+                            <ul class="links">
                                 <li>
-                                    <a href="" class="">
+                                    <a href= "https://github.com/dan-hez" class="contact-link" target="_blank">
                                         <!-- buscar icono -->
-                                        <i></i>
+                                        <i>dan-hez</i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" class="">
+                                    <a href="https://www.behance.net/dan-h" class="contact-link" target="_blank">
                                         <!-- buscar icono -->
-                                        <i></i>
+                                        <i>dan-h</i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" class="">
+                                    <a href="https://www.linkedin.com/in/dan-h/" class="contact-link" target="_blank">
                                         <!-- buscar icono -->
-                                        <i></i>
+                                        <i>Danylexi Hernandez</i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" class="">
+                                    <a href="mailto:danylexi@gmail.com" class="contact-link" target="_blank">
                                         <!-- buscar icono -->
-                                        <i></i>
+                                        <i>danylexi@gmail.com</i>
                                     </a>
                                 </li>
                             </ul>
                         </div>
 
-                        <div class="right-box-write-me">
+                        <div class="contact-box write-me">
                             <h2>Write me</h2>
-
-                            <div class="inputs-container">
-
-                                <!-- aquí va el formulario, checkear eso para construirlo -->
                             
-                            
-                                <button>Send</button>
-                            </div>
+                            <form action="index.html" method="post">                  
+                                <div class="first-form-box">
+                                    <ul>
+                                        <li>
+                                            <label for="name">Name*</label>
+                                            <input type="text" id="name" name="user-name" placeholder="e.g. Danylexi" required>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <label for="last-name">Last name*</label>
+                                            <input type="text" id="last-name" name="user-last-name" placeholder="e.g. Hernandez" required>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="second-form-box">
+                                    <ul>
+                                        <li>
+                                            <label for="mail">Email*</label>
+                                            <input type="email" id="mail" name="user-mail" placeholder="e.g. email@gmail.com" required>
+                                        </li>
+                                        <li>
+                                            <label for="message">Message*</label>
+                                            <textarea id="message" name="user-message" placeholder="Write a message here" required></textarea>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="third-form-box">
+                                    <button class="button-send" type="submit">Send</button>
+                                </div>
+                            </form>
 
                         </div>
                     </article>
