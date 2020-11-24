@@ -264,3 +264,24 @@ a:hover{
     font-size: 1rem;
     font-weight: 600;
 }
+
+/* main - project  ----------------------------------------- --> */
+
+.contact{
+    width: 100vw;
+    height: 150vh;
+    background-color: rgb(167, 167, 167);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(204, 204, 204);
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
