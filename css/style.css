@@ -4,11 +4,12 @@
     box-sizing: border-box;
 }
 body{
-    width: 100vw;
-    background-color: #cecece;
+    display: block;
+    overflow-x: hidden;
 }
 .container{
     /* max-width: 1000px; */
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
 }
@@ -44,58 +45,64 @@ header nav ul li, a{
     border-radius: 2px;
     background-color: #15616d;
     padding: 0 10px 0 10px;
-    margin-right: 5%;
+    margin-right: 30px;
 }
 .button-menu:hover{
-    background-color: #999999;
+    background-color: #f4edea;
 }
 .button-menu a:hover{
     color: #15616d;
 }
-
+.box-nav a:hover{
+    color: #15616d;
+}
 /* main - home ----------------------------------------- --> */
 
-.container main{
-    width: 100%;
-    height: 100vh;
+main{
+    display: block;
+    /* width: 100vw; */
+    /* height: 100vh; */
 }
 .home{
     width: 100vw;
     height: 100vh;
-    background-color: #f4edea;
+    background-color: #fff;
+    /* background-color: #f4edea; */
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
 }
-.home .home-greet, .home-figure{
-    margin-top: 7%;
-    width: 40%;
-    height: 50%;
-}
+/* .home-greet, .home-figure{
+    
+} */
 .home-greet, .home-figure{
+    /* margin-top: 50px; */
+    /* width: 400px; */
+    max-width: 60vw;
+    height: 300px;
+    /* background-color: burlywood; */
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
-    padding: 5%;
+    padding: 10px;
     display: flex;
-    flex-flow: column wrap;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: space-evenly;
-    
 }
 .initial-greet{
     color: #15616d;
     font-size: 1rem;
 }
 .home-greet h1{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .home-greet p{
     font-size: 1rem;
 }
 .button-what-i-do{
-    width: 170px;
-    height: 30px;
+    width: 120px;
+    height: 35px;
+    margin-top: 10px;
     border: none;
     border-radius: 2px;
     background-color: #f2d0a9;
@@ -104,11 +111,10 @@ header nav ul li, a{
 }
 .button-what-i-do:hover{
     cursor: pointer;
-    background-color: #f2d0f9;
+    color: #fff;
+    background-color: #99c1b9;
 }
-.button-what-i-do a:hover{
-    color: #e4e4e4;
-}
+
 
 /* main - skills ----------------------------------------- --> */
 

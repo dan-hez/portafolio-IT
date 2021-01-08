@@ -1,0 +1,13 @@
+/* header ------------------------------------------ --> */
+
+/* minimum size */
+@media(max-width: 1000px){
+    .home{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .home-greet{
+        text-align: center;
+        /* margin: auto; */
+    }
+}
