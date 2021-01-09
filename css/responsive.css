@@ -1,13 +1,30 @@
 /* header ------------------------------------------ --> */
 
-/* minimum size */
+/* big size */
 @media(max-width: 1000px){
-    .home{
+    .home, .skills{
         flex-direction: column;
+        align-items: center;
         margin-top: 100px;
-    }
-    .home-greet{
         text-align: center;
-        /* margin: auto; */
+        /* font-size: 1rem; */
     }
+    .skills-boxes{
+        /* width: 50vw; */
+        width: 430px;
+    }
+    
+}
+
+/* medium size */
+@media(max-width: 600px){
+    .skills-boxes{
+        /* width: 60vw; */
+        width: 430px;
+    }
+}
+
+/* small size */
+@media(max-width: 320px){
+
 }
