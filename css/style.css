@@ -9,12 +9,15 @@
     --blue-shadow: rgba(156,156,156,0.55);
     --blue-dark: #15616d;
     --blue-hover: #99c1b9;
+    --orange: #EEAB6D;
+    --orange-medium: #F0B67F;
     --orange-light: #f2d0a9;
+    --gray-light: #f4f4f4;
 }
-
 body{
     display: block;
     overflow-x: hidden;
+    /* font-family: 'Josefin Sans', sans-serif; */
 }
 .container{
     display: flex;
@@ -39,7 +42,7 @@ header{
 header nav ul{
     display: flex;
 }
-header nav ul li, a{
+header nav ul li, .buttons-menu{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
     text-transform: uppercase;
@@ -74,7 +77,7 @@ main{
 .home{
     width: 100vw;
     height: 100vh;
-    background-color: #fff;
+    background-color: var(--white);
     /* background-color: #f4edea; */
     display: flex;
     flex-flow: row;
@@ -109,27 +112,27 @@ main{
     border: none;
     border-radius: 2px;
     background-color: var(--orange-light);
-    color: #15616d;
+    color: var(--blue-dark);
     font-weight: bold;
 }
 .button-what-i-do:hover{
     cursor: pointer;
-    color: #fff;
-    background-color: #99c1b9;
+    color: var(--blue-dark);
+    /* background-color: #99c1b9; */
+    background-color: var(--blue);
 }
 
 /* main - skills ----------------------------------------- --> */
 
 .skills{
-    background-color: var(--white);
+    background-color: var(--gray-light);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .skills-container{
     width: 80%;
-    height: 100%;
-    /* background-color: #f4f4f4; */
+    height: 150vh;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -139,9 +142,7 @@ main{
     width: 50%;
     text-align: center;
     margin: 30px 0;
-    background-color: var(--white);
     color: var(--blue-dark);
-    text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2rem;
 }
@@ -150,14 +151,12 @@ main{
 }
 .skills-text p{
     font-size: 0.6em;
-    margin-top: 10%;
+    margin: 50px 0;
 }
 .skills-boxes{
     width: 65%;
     /* width: 650px; */
     height: auto;
-    background-color: var(--orange-light);
-    margin-bottom: 50px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -209,32 +208,32 @@ main{
     align-items: center;
 }
 .quote-icon-text{
-    width: 60%;
-    height: 60%;
+    /* width: 60%;
+    height: 60%; */
     /* background-color: rgb(219, 219, 219); */
 }
-.quote-icon{
-    margin-top: 40px;
-}
+/* .quote-icon{
+} */
 .quote-text{
-    margin-top: 15px;
+    margin-top: 80px;
     color: var(--white);
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 400;
 }
 .author{
-    margin-top: 15px;
+    margin-top: 80px;
     color: var(--white);
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
+    font-weight: lighter;
 }
 
 /* main - project  ----------------------------------------- --> */
 
 .projects{
-    width: 100vw;
-    height: 150vh;
+    width: 100%;
+    height: 170vh;
     background-color: var(--white);
     display: flex;
     flex-flow: column wrap;
@@ -243,7 +242,7 @@ main{
 }
 .projects-container{
     width: 80%;
-    height: 90%;
+    height: auto;
     /* background-color: rgb(131, 131, 131); */
     display: flex;
     flex-flow: column;
@@ -251,27 +250,24 @@ main{
     align-items: center;
 }
 .projects-text{
-    width: 40%;
-    margin: auto;
-    margin-top: 15%;
-    background-color: rgb(211, 211, 211);
+    width: 50%;
     text-align: center;
+    /* margin-top: 30px 0; */
+    color: var(--blue-dark);
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1rem;
-}
-.projects-text h2{
     font-size: 2rem;
 }
+.projects-text h2{
+    font-size: 1em;
+}
 .projects-text p{
-    font-size: 1rem;
-    margin-top: 5%;
+    font-size: 0.6em;
+    margin: 50px 0;
 }
 .projects-boxes{
-    width: 80%;
+    width: 85%;
     height: auto;
-    margin-top: 5%;
-    background-color: rgb(110, 110, 110);
-    margin-bottom: 20%;
+    /* background-color: rgb(110, 110, 110); */
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -279,17 +275,22 @@ main{
 .box-project{
     width: 280px;
     height: 280px;
-    background-color: white;
+    background-color: var(--white);
+    border: 2px solid var(--blue);
     border-radius: 3px;
-    margin-top: 1%;
+    margin: 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.box-project:hover{
+    background-color: var(--blue);
+    /* border: none; */
+}
 .project{
     width: 90%;
     height: 70%;
-    background-color: rgb(223, 223, 223);
+    /* background-color: rgb(223, 223, 223); */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -297,6 +298,7 @@ main{
 }
 .project .portfolio-it, .aprendet-app, .artistic-portfolio {
     align-content: center;
+    color: var(--blue-dark);
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
@@ -306,9 +308,9 @@ main{
 /* main - contact  ----------------------------------------- --> */
 
 .contact{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background-color: rgb(167, 167, 167);
+    background-color: var(--gray-light);
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -316,8 +318,10 @@ main{
 }
 .contact-container{
     width: 70%;
-    height: 70%;
-    background-color: rgb(204, 204, 204);
+    height: 80%;
+    background-color: var(--white);
+    border-radius: 10px;
+    border: 2px solid var(--orange-light);
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -326,34 +330,68 @@ main{
 .contact-box{
     width: 400px;
     height: 400px;
-    background-color: rgb(235, 235, 235);
-
+    /* background-color: rgb(235, 235, 235); */
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-
-    padding: 1%;
-
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
-.links{
-    list-style: none;
-    margin-top: 5%;
+.contact-me h2, .write-me h2{
+    color: var(--blue-dark);
+    font-size: 2em;
 }
+.contact-me p{
+    color: var(--blue-dark);
+    font-size: 1em;
+    /* font-weight: lighter; */
+}
+.link-box{
+    width: 300px;
+    height: 40px;
+    margin: 5px;
+}
+.link-box:hover{
+    cursor: pointer;
+}
+.links li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.link-box a i:hover{
+    color: #ECA15B;
+}
+
+/* .logo:hover{
+    cursor: pointer;
+    color: #ECA15B;
+} */
+
+.contact-link{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+    padding: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--blue-dark);
+}
+
 /* formulario ---- */
+
 form{
     width: 100%;
     height: 80%;
-    background-color: rgb(192, 192, 192);
+    /* background-color: rgb(192, 192, 192); */
     display: flex;
     flex-wrap: wrap;
 }
 .first-form-box{
     width: 100%;
     height: 20%;
-    background-color: rgb(150, 150, 150);
+    /* background-color: rgb(150, 150, 150); */
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -361,61 +399,75 @@ form{
 .second-form-box{
     width: 100%;
     height: 60%;
-    background-color: rgb(109, 109, 109);
+    /* background-color: rgb(109, 109, 109); */
 }
 .third-form-box{
     width: 100%;
     height: 20%;
-    background-color: rgb(78, 78, 78);
+    /* background-color: rgb(78, 78, 78); */
 }
 form ul{
     list-style: none;
 }
 label,input{
     display: block;
-    margin-top: 2%;
+    margin-top: 5px;
 }
 label{
-
+    color: var(--blue-dark);
+    font-weight: 500;
+}
+input{
+    width: auto;
+    height: 40px;
 }
 input, textarea{
     border: none;
-    border-radius: 2px;
+    border-radius: 10px;
     padding: 2px;
+    
+    background-color: var(--gray-light);
+    color: #bbb;
 }
 textarea{
-    width : 200px;
-    height: 50px;
+    width : 380px;
+    height: 80px;
     margin-top: 2%;
 }
 .button-send{
     border: none;
     border-radius: 2px;
-    background-color: #818181;
-    padding: 5px 35px 5px 35px;
+    background-color: var(--orange-light);
+    padding: 10px 40px;
     margin-top: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--blue-dark);
 }
 .button-send:hover{
-    background-color: #999999;
-}
-.button-send a:hover{
-    color: #e4e4e4;
+    background-color: var(--blue-hover);
+    color: var(--blue-dark);
 }
 
 /* footer  ----------------------------------------- --> */
 
-/* footer{
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-}
-.footer-container{
+footer{
     width: 100vw;
     height: 400px;
-    background-color: rgb(141, 90, 90);
+    background-color: var(--blue-dark);
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container{
+    width: 500px;
+    height: 200px;
+    background-color: var(--gray-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .menu-footer{
 
-} */
+}
