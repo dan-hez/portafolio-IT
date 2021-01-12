@@ -29,8 +29,7 @@ body{
 header{
     padding: 15px;
     width: 100vw;
-    /* background-color: #99c1b9; */
-    background-color: #ddb995a9;
+    background-color: #f2d0a9dc;
     box-shadow: 0px 13px 17px -8px rgba(255, 214, 187, 0.55);
     position: fixed;
 }
@@ -49,7 +48,7 @@ header nav ul li, .buttons-menu{
     padding: 10px;
     text-decoration: none;
     list-style-type: none;
-    color: #fff;
+    color: var(--white);
 }
 .button-menu{
     border: none;
@@ -463,11 +462,64 @@ footer{
 .footer-container{
     width: 500px;
     height: 200px;
-    background-color: var(--gray-light);
+    /* background-color: var(--gray-light); */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .menu-footer{
-
+    height: auto;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu-footer ul{
+    display: flex;
+}
+.menu-footer ul li{
+    list-style-type: none;
+}
+.menu-footer ul li a{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--blue);
+}
+.menu-footer ul li a:hover{
+    color: var(--gray-light);
+}
+.icons{
+    margin: 20px 0;
+}
+.icons ul{
+    display: flex;
+}
+.icons ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons ul li a img{
+    margin-top: 2px;
+}
+.icons ul li a{
+    padding: 10px 13px;
+    background-color: var(--blue);
+    border-radius: 50%;
+    margin: 10px;
+    text-decoration: none;
+}
+.icons ul li a:hover{
+    background-color: var(--gray-light);
+}
+.madewith{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    margin: 20px 0;
+    text-align: center;
+    color: var(--blue);
 }
