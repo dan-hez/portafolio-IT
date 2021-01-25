@@ -13,6 +13,7 @@
     --orange-medium: #F0B67F;
     --orange-light: #f2d0a9;
     --gray-light: #f4f4f4;
+    /* background-color: #f4f1ef; */
 }
 body{
     display: block;
@@ -27,7 +28,8 @@ body{
 /* header ------------------------------------------ --> */
 
 header{
-    padding: 15px;
+    /* padding: 15px; */
+    padding: 2%;
     width: 100vw;
     background-color: #f2d0a9dc;
     box-shadow: 0px 13px 17px -8px rgba(255, 214, 187, 0.55);
@@ -66,6 +68,19 @@ header nav ul li, .buttons-menu{
 .box-nav a:hover{
     color: #15616d;
 }
+label #sign-one, label #sign-two{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    margin: 10px 10px;
+    cursor: pointer;
+    display: none;
+}
+#res-menu{
+    display: none;
+}
+
 /* main - home ----------------------------------------- --> */
 
 main{
@@ -85,24 +100,25 @@ main{
 }
 .home-greet, .home-figure{
     /* width: 400px; */
-    max-width: 60vw;
-    height: 300px;
+    max-width: 50vw;
+    /* height: 300px; */
+    height: 50%;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
-    padding: 10px;
+    /* padding: 10px; */
+    padding: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 .initial-greet{
     color: #15616d;
-    font-size: 1rem;
 }
 .home-greet h1{
-    font-size: 3em;
+    font-size: 2.5em;
 }
 .home-greet p{
-    font-size: 1em;
+    font-size: 1.5em;
 }
 .button-what-i-do{
     width: 120px;
@@ -164,7 +180,7 @@ main{
     width: 200px;
     height: 200px;
     background-color: var(--white);
-    border: 2px solid var(--orange-light);
+    border: 2px solid var(--blue);
     border-radius: 3px;
     margin: 15px 10px 5px 10px;
     display: flex;

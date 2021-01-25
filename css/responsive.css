@@ -1,7 +1,8 @@
-/* header ------------------------------------------ --> */
+/* big size --------------------- */
+@media(max-width: 900px){
 
-/* big size */
-@media(max-width: 1000px){
+    /* header ------------------> */
+
     .home, .skills{
         flex-direction: column;
         align-items: center;
@@ -9,22 +10,65 @@
         text-align: center;
         /* font-size: 1rem; */
     }
+
+    
+
     .skills-boxes{
         /* width: 50vw; */
-        width: 430px;
+        /* width: 430px; */
     }
-    
 }
 
-/* medium size */
+/* medium size ------------------ */
 @media(max-width: 600px){
     .skills-boxes{
         /* width: 60vw; */
-        width: 430px;
+        /* width: 430px; */
     }
-}
+    .button-menu{
+        display: none;
+    }
+    label #sign-one{
+        display: block;
+    }
+    .box-nav nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--blue-dark);
+        top: 90px;
+        left: 100%;
+        bottom: 100%;
+        flex-direction: column;
+        text-align: center;
+        transition: .5s;
+        z-index: 10;
+    }
+    /* .box-nav nav ul li{ */
+    .buttons-menu{
+        display: block;
+        margin: 30px;
+        line-height: 25px;
+    }
+    .box-nav nav ul li:hover{
+        color: var(--blue-hover);
+    }
+    .box-nav a:hover{
+        color: var(--blue-hover);
+        font-size: 1em;
+    }
+    #res-menu:checked ~ ul{
+        left: 0;
+    }
+    #res-menu:checked ~ label #sign-one{
+        display: none;
+    }
+    #res-menu:checked ~ label #sign-two{
+        display: block;
+    }
+    
 
-/* small size */
-@media(max-width: 320px){
-
+/* small size ------------------- */
+@media(max-width: 360px){
+        
 }
